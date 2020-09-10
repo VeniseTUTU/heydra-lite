@@ -1,0 +1,24 @@
+query GetexpiredSubscription($type:String){
+  getexpiredSubscription(input:{type:$type}){
+    count
+    transaction{
+      viewerId
+      status
+      subscriptionId
+      subscriptionPlan
+      subscriberFirstName
+      subscriberLastName
+      subscriberEmail
+      planId
+      gateway
+      startDate
+      dueDate
+      createdAt
+    }
+  }
+}
+
+
+{
+  "type": "recurring"
+}

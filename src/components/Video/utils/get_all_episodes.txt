@@ -1,0 +1,24 @@
+mutation GetEpisodes($title:String!,$season:String!){
+  getEpisodes(input:{title:$title, season: $season}){
+   
+      itemId
+      itemLink
+      itemImage
+      itemDuration
+      itemTitle
+      category
+      subCategory
+      genre
+    }
+    
+}
+
+{
+ "title": "GAME OF THRONES",
+  "season": "1"
+}
+
+{
+"Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBcGlLZXkiOiJjY2NhODRiZi0wNDdmLTRhODEtYmQzNC1hNzA1MzMxYzBiZDQiLCJpYXQiOjE1OTA4NzY0MjN9.2zGwwJ13WEgFLhtWD3H8svnp4L8ZonSe_P9SFAzpOSA",
+"userId": 202083011
+}

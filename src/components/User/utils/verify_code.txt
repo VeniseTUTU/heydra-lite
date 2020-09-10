@@ -1,0 +1,20 @@
+mutation VerifyCode($email:String!,$code:String!){
+  verifyCode(input:{email:$email,code:$code}){
+    nodes{
+    success
+    userId
+    email
+    code
+    }
+    }
+}
+
+
+
+//////////////// Variables 
+
+{
+  "email":"slypalmer15@gmail.com",
+  "code":"487352"
+}
+

@@ -1,0 +1,35 @@
+mutation GetPriorVideo($itemId:Int!){
+  getPriorVideo(input:{itemId:$itemId}){
+    video{
+      itemId
+      source{
+        src
+        type
+      }
+    }
+    queue{
+      itemId
+    }
+    supporting{
+      itemId
+    }
+    likes
+    comments{
+      createdAt
+      comment
+      likes
+      user{
+        viewerId
+      }
+    }
+    }
+}
+
+{
+ "itemId": 2020453609
+}
+
+{
+"Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBcGlLZXkiOiJjY2NhODRiZi0wNDdmLTRhODEtYmQzNC1hNzA1MzMxYzBiZDQiLCJpYXQiOjE1OTA4NzY0MjN9.2zGwwJ13WEgFLhtWD3H8svnp4L8ZonSe_P9SFAzpOSA",
+"userId": 202083011
+}

@@ -1,0 +1,22 @@
+mutation UpdateViewer($phone:String,$firstName:String,$lastName:String,$dateOfBirth:String){
+  updateViewer(input:{phone:$phone,firstName:$firstName,lastName:$lastName,dateOfBirth:$dateOfBirth}){
+    firstName
+    lastName
+    phone
+}
+}
+  
+
+
+//////////////// Variables 
+{
+  "phone":"081034433",
+  "firstName":"Veni",
+  "lastName":"TUTU"
+  }
+
+///////////////Headers
+{
+"Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBcGlLZXkiOiJjY2NhODRiZi0wNDdmLTRhODEtYmQzNC1hNzA1MzMxYzBiZDQiLCJpYXQiOjE1OTA4NzY0MjN9.2zGwwJ13WEgFLhtWD3H8svnp4L8ZonSe_P9SFAzpOSA",
+"userId": 202083011
+}

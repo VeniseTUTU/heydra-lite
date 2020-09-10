@@ -1,0 +1,14 @@
+mutation UpdateExpiredSubscription($type:String){
+  updateExpiredSubscription(input:{type:$type}){
+    count
+    transactions{
+      id
+    }
+  }
+}
+
+
+
+{
+  "type": "recurring"
+}

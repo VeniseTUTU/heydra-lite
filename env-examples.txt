@@ -1,0 +1,16 @@
+# Environment
+NODE_ENV=development
+
+# Settings
+
+GRAPHQL_ENDPOINT=/graphql
+BASE_LINK = /watch/
+
+# Dev Settings
+DATABASE_URL= mysql://root:things@localhost:3306/heydra
+USER_IMAGE_URL_DEV = http://localhost:8080/src/cdn/avatars/
+VIDEO_URL_DEV = http://localhost:8080/src/videos/
+POSTER_URL_DEV = http://localhost:8080/src/cdn/images/
+TRAILER_URL_DEV = http://localhost:8080/src/videos/
+
+

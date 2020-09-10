@@ -1,0 +1,42 @@
+mutation AddUser($email:String!,$passPhrase:String!,$phone:String,$firstName:String!,$lastName:String!,$gender:Gender!,$country:String!,$touchPoint:String){
+  addUser(input:{email:$email,passPhrase:$passPhrase,phone:$phone,firstName:$firstName,lastName:$lastName,gender:$gender,country:$country,touchPoint:$touchPoint}){
+    token
+    user{
+      apiKey
+      email
+      id
+      userId
+      userType
+      verifyString
+      viewer{
+        firstName
+      }
+      billing{
+        billingId
+        status
+        recurring
+     }
+    
+  
+    }
+  
+}
+}
+  
+
+
+//////////////// Variables 
+{
+  "phone":"081034433",
+  "firstName":"Venise",
+  "lastName":"TUTU",
+  "country":"Nigeria",
+  "gender":"MALE",
+  "touchPoint":"social media"
+}
+
+///////////////Headers
+{
+"Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBcGlLZXkiOiJjOTdkMTMwOC1lZjE1LTQxYTYtYmRkOS1kMjdkOTllOTMzYjMiLCJpYXQiOjE1OTI5NTQzNzZ9.o28a6FdegkszoQmxVpIZEZ2DDsApeOFZhE2Esw-8KQE",
+"userId": 202026656
+}

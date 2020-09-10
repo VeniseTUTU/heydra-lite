@@ -1,0 +1,40 @@
+mutation CreateTransaction($userId:Int!,$status:String!,$amount:String!,$quantity:Int,$subscriptionId:String,$subscriptionPlan:String,$subscriberFirstName:String,$subscriberLastName:String,$subscriberEmail:String,$planId:String,$gateway:String,$startDate:String,$dueDate:String,$createdAt:String){ 
+  createTransaction(input:{userId:$userId,status:$status,amount:$amount,quantity:$quantity,subscriptionId:$subscriptionId,subscriptionPlan:$subscriptionPlan,subscriberFirstName:$subscriberFirstName,subscriberLastName:$subscriberLastName,subscriberEmail:$subscriberEmail,planId:$planId,gateway:$gateway,startDate:$startDate,dueDate:$dueDate,createdAt:$createdAt}){
+    id
+    viewerId
+    status
+    amount
+    quantity
+    subscriptionId
+    subscriptionPlan
+    subscriberFirstName
+    subscriberLastName
+    subscriberEmail
+    planId
+    gateway
+    startDate
+    dueDate
+    createdAt
+}
+}
+
+
+//////////////// Variables 
+{
+    "userId": 625525262,
+    "status": "active",
+    "amount": "0.8",
+    "quantity": 1,
+    "subscriptionId": "I-bGciOiJIUzI1NiR5",
+    "subscriptionPlan": "Basic",
+    "subscriberFirstName": "venise",
+    "subscriberLastName": "tutu",
+    "subscriberEmail": "dylanhendrix@gmail.com",
+    "planId": "P-0BW64053W7221323LL36NREI",
+    "gateway": "Paypal",
+    "startDate": "2020-07-03T09:17:07Z",
+    "dueDate": "2020-07-03T09:17:05Z",
+    "createdAt": "2020-07-03T09:17:05Z"
+  }
+
+

@@ -1,0 +1,19 @@
+mutation DeleteLikes($itemId:Int!,$viewerId:Int){
+  deleteLikes(input:{itemId:$itemId,viewerId:$viewerId}){
+    success
+}
+}
+
+
+
+//////////////// Variables 
+
+{
+ "itemId": 2020453609,
+ "viewerId": 202083011
+}
+
+{
+"Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBcGlLZXkiOiJjY2NhODRiZi0wNDdmLTRhODEtYmQzNC1hNzA1MzMxYzBiZDQiLCJpYXQiOjE1OTA4NzY0MjN9.2zGwwJ13WEgFLhtWD3H8svnp4L8ZonSe_P9SFAzpOSA",
+"userId": 202083011
+}

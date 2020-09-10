@@ -1,0 +1,20 @@
+mutation SetCode($email:String!){
+  setCode(input:{email:$email}){
+    
+    nodes{
+    success
+    userId
+    email
+    }
+  
+    }
+}
+
+
+
+//////////////// Variables 
+
+{
+  "email":"slypalmer15@gmail.com"
+}
+

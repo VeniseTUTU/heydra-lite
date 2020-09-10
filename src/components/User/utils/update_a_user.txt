@@ -1,0 +1,22 @@
+mutation UpdatePassword($password:String!){
+  updatePassword(input:{password:$password}){
+    
+    success
+  
+    }
+}
+
+
+
+//////////////// Variables 
+
+{
+  "password":"12345678"
+  
+}
+
+
+{
+"Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBcGlLZXkiOiJjY2NhODRiZi0wNDdmLTRhODEtYmQzNC1hNzA1MzMxYzBiZDQiLCJpYXQiOjE1OTA4NzY0MjN9.2zGwwJ13WEgFLhtWD3H8svnp4L8ZonSe_P9SFAzpOSA",
+"userId": 202083011
+}

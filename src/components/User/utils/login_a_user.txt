@@ -1,0 +1,44 @@
+mutation LoginUser($email:String!,$passPhrase:String!){
+  loginUser(input:{email:$email,passPhrase:$passPhrase}){
+    token
+    user{
+      email
+      id
+      isEmailConfirmed
+      status
+      userId
+      userType
+      viewer{
+        firstName
+      }
+      billing{
+        billingId
+      }
+      
+    }
+    transaction{
+      subscriptionId
+    }
+    history{
+      itemId
+      timeLeft
+    }
+    liked{
+      itemId
+    }
+    queue{
+      itemId
+    }
+  
+    }
+}
+
+
+
+//////////////// Variables 
+
+{
+   "email":"slypalmer15@gmail.com",
+  "passPhrase":"12345678"
+  
+}

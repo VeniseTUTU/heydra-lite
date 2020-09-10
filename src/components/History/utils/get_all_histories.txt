@@ -1,0 +1,29 @@
+query GetViewers{
+  getViewers(input:{pageSize: 3}){
+    viewers{
+      alias
+    city
+    viewerId
+    firstName
+    id
+    imageUrl
+    lastName
+    phone
+    state
+    touchPoint
+    user{
+      apiKey
+      apiSecret
+      email
+      id
+      isEmailConfirmed
+      passPhrase
+      status
+      userId
+      userType
+      
+    }
+    }
+  
+    }
+}

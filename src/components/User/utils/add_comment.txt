@@ -1,0 +1,25 @@
+mutation AddComment($itemId:Int!,$viewerId:Int,$comment:String!){
+  addComment(input:{itemId:$itemId,viewerId:$viewerId,comment:$comment}){
+    createdAt
+      comment
+      likes
+      user{
+       viewerId
+}
+}
+}
+
+
+
+//////////////// Variables 
+
+{
+ "itemId":2020453609,
+  "viewerId": 202083011,
+  "comment":"This movie a trip.. Stanus be thinking he being remote controlled."
+}
+
+{
+"Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBcGlLZXkiOiJjY2NhODRiZi0wNDdmLTRhODEtYmQzNC1hNzA1MzMxYzBiZDQiLCJpYXQiOjE1OTA4NzY0MjN9.2zGwwJ13WEgFLhtWD3H8svnp4L8ZonSe_P9SFAzpOSA",
+"userId": 202083011
+}

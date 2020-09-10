@@ -1,0 +1,42 @@
+query($viewerId:Int!){
+  getViewer(input:{viewerId:$viewerId}){
+    city
+    viewerId
+    firstName
+    id
+    imageUrl
+    lastName
+    phone
+    state
+    touchPoint
+    user{
+      apiKey
+      apiSecret
+      email
+      id
+      isEmailConfirmed
+      passPhrase
+      status
+      userId
+      userType
+      
+    }
+  
+    }
+}
+  
+
+
+
+
+//////////////// Variables 
+
+{
+  "viewerId": 202083011
+ }
+
+///////////////Headers
+{
+"Authorization": "Bearer __TOKEN__",
+"ApiKey": __APIKEY__
+}

@@ -1,0 +1,38 @@
+mutation AddUser($email:String!,$passPhrase:String!,$phone:String,$firstName:String!,$lastName:String!,$gender:Gender!,$country:String!,$touchPoint:String){
+  addUser(input:{email:$email,passPhrase:$passPhrase,phone:$phone,firstName:$firstName,lastName:$lastName,gender:$gender,country:$country,touchPoint:$touchPoint}){
+    token
+    user{
+      apiKey
+      email
+      id
+      userId
+      userType
+      verifyString
+      viewer{
+        firstName
+      }
+      billing{
+        billingId
+        status
+        recurring
+     }
+    
+  
+    }
+  
+}
+}
+
+
+
+//////////////// Variables 
+{
+  "email": "chala@gmail.com",
+  "passPhrase": "12345678",
+  "phone":"081034433",
+  "firstName":"Venise",
+  "lastName":"TUTU",
+  "country":"Nigeria",
+  "gender":"MALE",
+  "touchPoint":"social media"
+}

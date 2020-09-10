@@ -1,0 +1,36 @@
+mutation AddVideo($keywords:String!,$category:VideoCategory!,$description:String!,$genre:[VideoGenre]!,$itemDuration:String!,$itemImage:String!,$itemTitle:String!,$productionCompany:String,$productionYear:String,$trailerUrl:String!,$subCategory:VideoSubCategory!,$src:String,$type:String){
+  addVideo(input:{keywords:$keywords,category:$category,description:$description,genre:$genre,itemDuration:$itemDuration,itemImage:$itemImage,itemTitle:$itemTitle,productionCompany:$productionCompany,productionYear:$productionYear,trailerUrl:$trailerUrl,subCategory:$subCategory,src:$src,type:$type}){
+    itemId
+    genre
+    source{
+      src
+      type
+    }
+  }
+}
+
+
+
+
+
+//////////////// Variables 
+
+{
+  "itemImage": "thrones.jpg",
+  "itemDuration": "1 Hour",
+  "itemTitle": "GAME OF THRONES",
+  "productionCompany": "HBO",
+  "productionYear":   "2018",
+  "genre": ["ADVENTURE"],
+  "category": "TVSERIES",
+  "subCategory": "TRENDING",
+  "trailerUrl":  "trailer.mp4",
+  "description": "John Snow has declared himself blah blah and insta...",
+  "src":  "sintrel/episode1/playlist.m3u8",
+  "type":  "application/x-mpegURL",
+  "keywords": "game of thrones, game, thrones, adventure, john snow, hbo",
+  "season": "1",
+  "episode": "1",
+  "episodeTitle": "The Nerd Starks"
+  
+}

@@ -1,0 +1,9 @@
+{
+    "ignore": [
+        ".git",
+        "prisma",
+        "build",
+        "client",
+        "node_modules/**/node_modules"
+    ]
+}
